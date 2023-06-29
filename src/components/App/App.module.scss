@@ -1,0 +1,39 @@
+@import '../../utils/constantsSCSS.scss';
+
+.wrapper{
+	max-width: 58.75rem;
+	max-height: 600px;
+	margin: 0 auto;
+	padding: 1rem;
+	border-radius: 20px;
+	display: flex;
+	height: 100vh;
+	background-color: $White;
+	@media(max-width:400px){
+	flex-direction: column;	
+	align-items: center;
+	padding: 0rem;
+	background-color: transparent;
+	max-height: none;
+	}
+}
+.aside{
+	width: 30%;
+	@media(max-width:400px){
+		width: 100%;
+	}
+}
+.main{
+	width: 100%;
+	height: 100%;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	margin: 0rem auto;
+	padding: 2.5rem 0.5rem 1.35rem;
+	@media(max-width:400px){
+		padding: 0rem;
+	}
+}

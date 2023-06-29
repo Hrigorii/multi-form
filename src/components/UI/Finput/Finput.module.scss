@@ -1,0 +1,32 @@
+@import '../../../utils/constantsSCSS.scss';
+
+
+.infoform{
+	&__lable{
+	  color: $MarineBlue;			
+	}
+  &__text{		
+	  display: flex;
+	  justify-content: space-between;
+	  margin-bottom:0.6875rem;
+	  color: $MarineBlue;		
+	  .error{
+		  color: $StrawberryRed;
+	  }
+  }
+  &__input{
+	  width: 100%;
+	  height:2.93rem;
+	  padding: 1rem;
+	  border-radius: 10px;
+	  border: 1px solid $CoolGray;
+	  font-weight: 500;
+	  margin-bottom: 1.75rem;	
+	  &:hover{
+		  border: 1px solid $PurplishBlue;
+	  }
+	  &.error{
+		  border: 1px solid $StrawberryRed;
+	  }
+  }
+}

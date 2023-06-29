@@ -1,0 +1,58 @@
+@import '../../utils/constantsSCSS.scss';
+
+.stepitem{
+display: flex;
+text-transform: uppercase;
+align-items: center;
+@media(max-width:400px){
+	align-items: start;
+}
+}
+
+.stepitem__num{
+	color: $White;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	border: 1px solid $White;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	&.active{
+		color: $MarineBlue;
+		background-color: $LightGray;
+	}
+	@media(max-width:550px){
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+	@media(max-width:550px){
+		width: 2rem;
+		height: 2rem;
+	}
+}
+
+.stepitem__info{
+	margin-left: 1rem;
+	font-weight: 700;
+	@media(max-width:550px){
+		margin-left: 0.5rem;
+	}
+	@media(max-width: 400px){
+		display: none;
+	}
+	h2{
+		color: $White;	
+		font-size: 1rem;		
+		@media(max-width:656px){
+			font-size: 0.8rem;
+		}
+	}
+	h3{
+		color: $CoolGray;	
+		margin-bottom: 0.5625rem;
+		font-weight: 500;
+		font-size: 0.7rem;
+	}
+}

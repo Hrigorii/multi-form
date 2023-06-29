@@ -1,0 +1,21 @@
+@import '../../../utils/constantsSCSS.scss';
+
+
+.addon{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	&__header{
+		@include header;
+		margin-bottom: 2.75rem;
+	}
+	.addons>*:not(:last-child){
+		margin-bottom: 1rem;
+	}
+	@media (max-width:400px) {
+		align-items: center;
+		.content{
+			@include content;
+		}
+	}
+}

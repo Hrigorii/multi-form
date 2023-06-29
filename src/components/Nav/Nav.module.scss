@@ -1,0 +1,19 @@
+@import '../../utils/constantsSCSS.scss';
+
+.nav{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	text-transform: capitalize;
+	margin-top: auto;
+	align-items: center;
+	padding: 1rem;
+	font-weight: 500;
+	background-color: $White;
+	a{
+		color: $CoolGray;
+		&:hover{
+			color: $MarineBlue;
+		}
+	}
+}
