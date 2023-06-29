@@ -9,7 +9,7 @@ import store from './store';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename="/multi-form/">
       <App />
     </BrowserRouter>
   </Provider>
